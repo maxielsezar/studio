@@ -36,6 +36,7 @@ Aquí tienes información importante sobre el centro:
 - Sitio web: https://cfp655esquel.edu.ar/cfp655/
 - Horario de atención: de 8:00hs a 18:00hs
 - Inscripciones: Para realizar inscripciones, visita https://cfp655esquel.edu.ar/cfp655/inscripciones/
+- Costo: Todas las capacitaciones que dicta este Centro son absolutamente gratuitas.
 
 Responde a la siguiente consulta del usuario:
 
