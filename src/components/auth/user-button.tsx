@@ -23,7 +23,7 @@ export function UserButton({ user }: UserButtonProps) {
           <Avatar className="h-8 w-8">
             <AvatarImage
               src={user.user_metadata.avatar_url}
-              alt={user.user_metadata.name ?? 'User Avatar'}
+              alt={user.user_metadata.name ?? 'Avatar de usuario'}
             />
             <AvatarFallback>
               {user.email?.[0].toUpperCase() ?? 'U'}
@@ -35,7 +35,7 @@ export function UserButton({ user }: UserButtonProps) {
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
             <p className="text-sm font-medium leading-none">
-              {user.user_metadata.name ?? 'User'}
+              {user.user_metadata.name ?? 'Usuario'}
             </p>
             <p className="text-xs leading-none text-muted-foreground">
               {user.email}
@@ -45,7 +45,7 @@ export function UserButton({ user }: UserButtonProps) {
         <DropdownMenuSeparator />
         <form action={signOut}>
           <DropdownMenuItem asChild>
-            <button type="submit" className="w-full text-left">Sign out</button>
+            <button type="submit" className="w-full text-left">Cerrar sesión</button>
           </DropdownMenuItem>
         </form>
       </DropdownMenuContent>

@@ -1,23 +1,23 @@
 'use server';
 
 /**
- * @fileOverview An AI chatbot flow that responds to user queries.
+ * @fileOverview Un flujo de chatbot de IA que responde a las consultas de los usuarios.
  *
- * - aiChatBot - A function that handles the chatbot interaction.
- * - AIChatBotInput - The input type for the aiChatBot function.
- * - AIChatBotOutput - The return type for the aiChatBot function.
+ * - aiChatBot - Una función que maneja la interacción del chatbot.
+ * - AIChatBotInput - El tipo de entrada para la función aiChatBot.
+ * - AIChatBotOutput - El tipo de retorno para la función aiChatBot.
  */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const AIChatBotInputSchema = z.object({
-  query: z.string().describe('The user query.'),
+  query: z.string().describe('La consulta del usuario.'),
 });
 export type AIChatBotInput = z.infer<typeof AIChatBotInputSchema>;
 
 const AIChatBotOutputSchema = z.object({
-  response: z.string().describe('The AI chatbot response.'),
+  response: z.string().describe('La respuesta del chatbot de IA.'),
 });
 export type AIChatBotOutput = z.infer<typeof AIChatBotOutputSchema>;
 
@@ -29,7 +29,7 @@ const prompt = ai.definePrompt({
   name: 'aiChatBotPrompt',
   input: {schema: AIChatBotInputSchema},
   output: {schema: AIChatBotOutputSchema},
-  prompt: `You are a helpful AI chatbot. Respond to the following user query:
+  prompt: `Eres un útil chatbot de IA para Centro Profesional 655. Responde a la siguiente consulta del usuario:
 
 Query: {{{query}}}`,
 });

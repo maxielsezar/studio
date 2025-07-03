@@ -21,8 +21,8 @@ export default async function LoginPage() {
           <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/20 text-primary">
             <MessageCircle className="h-8 w-8" />
           </div>
-          <h1 className="text-3xl font-bold text-foreground">Welcome to IntelliChat</h1>
-          <p className="mt-2 text-muted-foreground">Sign in or create an account to continue</p>
+          <h1 className="text-3xl font-bold text-foreground">Bienvenido a Centro Profesional 655</h1>
+          <p className="mt-2 text-muted-foreground">Inicia sesión o crea una cuenta para continuar</p>
         </div>
         <AuthForm />
       </div>

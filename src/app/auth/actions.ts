@@ -6,8 +6,8 @@ import { createClient } from '@/lib/supabase/server'
 import { z } from 'zod'
 
 const schema = z.object({
-  email: z.string().email({ message: 'Invalid email address.' }),
-  password: z.string().min(6, { message: 'Password must be at least 6 characters.' }),
+  email: z.string().email({ message: 'Dirección de correo electrónico inválida.' }),
+  password: z.string().min(6, { message: 'La contraseña debe tener al menos 6 caracteres.' }),
 })
 
 export async function login(prevState: any, formData: FormData) {
@@ -52,7 +52,7 @@ export async function signup(prevState: any, formData: FormData) {
     return { error: error.message }
   }
   
-  return { message: 'Check your email for a confirmation link to complete the sign up.' }
+  return { message: 'Revisa tu correo electrónico para ver el enlace de confirmación y completar el registro.' }
 }
 
 export async function signOut() {

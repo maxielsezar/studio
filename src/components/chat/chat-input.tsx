@@ -14,7 +14,7 @@ export function ChatInput({ value, onChange, onSubmit, disabled }: ChatInputProp
     <form onSubmit={onSubmit} className="flex items-center gap-2">
       <Input
         type="text"
-        placeholder="Type a message..."
+        placeholder="Escribe un mensaje..."
         className="flex-1"
         value={value}
         onChange={onChange}
@@ -23,7 +23,7 @@ export function ChatInput({ value, onChange, onSubmit, disabled }: ChatInputProp
       />
       <Button type="submit" size="icon" disabled={disabled || !value.trim()}>
         <SendHorizontal className="h-4 w-4" />
-        <span className="sr-only">Send</span>
+        <span className="sr-only">Enviar</span>
       </Button>
     </form>
   )

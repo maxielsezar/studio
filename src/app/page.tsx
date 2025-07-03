@@ -20,7 +20,7 @@ export default async function HomePage() {
       <header className="flex h-16 items-center justify-between border-b bg-card px-4 md:px-6">
         <div className="flex items-center gap-2">
           <MessageCircle className="h-6 w-6 text-primary" />
-          <h1 className="text-lg font-semibold">IntelliChat</h1>
+          <h1 className="text-lg font-semibold">Centro Profesional 655</h1>
         </div>
         <UserButton user={user} />
       </header>

@@ -16,7 +16,7 @@ type Message = {
 
 export function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "Hello! I'm IntelliChat. How can I help you today?" }
+    { role: 'assistant', content: "¡Hola! Soy el asistente de Centro Profesional 655. ¿Cómo puedo ayudarte hoy?" }
   ])
   const [inputValue, setInputValue] = useState('')
   const [isLoading, setIsLoading] = useState(false)
@@ -42,7 +42,7 @@ export function ChatInterface() {
       setMessages(prev => [...prev, assistantMessage])
     } catch (error) {
       console.error(error);
-      const errorMessage: Message = { role: 'assistant', content: "Sorry, I couldn't process your request. Please try again." }
+      const errorMessage: Message = { role: 'assistant', content: "Lo siento, no pude procesar tu solicitud. Por favor, inténtalo de nuevo." }
       setMessages(prev => [...prev, errorMessage])
     } finally {
       setIsLoading(false)

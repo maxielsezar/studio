@@ -15,7 +15,7 @@ function SubmitButton({ text }: { text: string }) {
   const { pending } = useFormStatus()
   return (
     <Button type="submit" className="w-full" aria-disabled={pending}>
-      {pending ? 'Submitting...' : text}
+      {pending ? 'Enviando...' : text}
     </Button>
   )
 }
@@ -29,18 +29,18 @@ export function AuthForm() {
       <CardContent className="p-4">
         <Tabs defaultValue="login" className="w-full">
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="login">Login</TabsTrigger>
-            <TabsTrigger value="signup">Sign Up</TabsTrigger>
+            <TabsTrigger value="login">Iniciar sesión</TabsTrigger>
+            <TabsTrigger value="signup">Registrarse</TabsTrigger>
           </TabsList>
           <TabsContent value="login">
             <div className="space-y-4 pt-4">
               <form action={loginAction} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" name="email" type="email" placeholder="m@example.com" required />
+                  <Input id="email" name="email" type="email" placeholder="m@ejemplo.com" required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password">Contraseña</Label>
                   <Input id="password" name="password" type="password" required />
                 </div>
                 {loginState?.error && (
@@ -50,7 +50,7 @@ export function AuthForm() {
                     <AlertDescription>{loginState.error}</AlertDescription>
                   </Alert>
                 )}
-                <SubmitButton text="Login" />
+                <SubmitButton text="Iniciar sesión" />
               </form>
             </div>
           </TabsContent>
@@ -59,10 +59,10 @@ export function AuthForm() {
               <form action={signupAction} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="email-signup">Email</Label>
-                  <Input id="email-signup" name="email" type="email" placeholder="m@example.com" required />
+                  <Input id="email-signup" name="email" type="email" placeholder="m@ejemplo.com" required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="password-signup">Password</Label>
+                  <Label htmlFor="password-signup">Contraseña</Label>
                   <Input id="password-signup" name="password" type="password" required />
                 </div>
                 {signupState?.error && (
@@ -75,11 +75,11 @@ export function AuthForm() {
                 {signupState?.message && (
                   <Alert>
                     <Terminal className="h-4 w-4" />
-                    <AlertTitle>Heads up!</AlertTitle>
+                    <AlertTitle>¡Atención!</AlertTitle>
                     <AlertDescription>{signupState.message}</AlertDescription>
                   </Alert>
                 )}
-                <SubmitButton text="Sign Up" />
+                <SubmitButton text="Registrarse" />
               </form>
             </div>
           </TabsContent>
