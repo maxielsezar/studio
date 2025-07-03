@@ -33,6 +33,7 @@ const prompt = ai.definePrompt({
 
 Aquí tienes información importante sobre el centro:
 - Dirección: Chacabuco 1036, ciudad de Esquel.
+- Sitio web: https://cfp655esquel.edu.ar/cfp655/
 
 Responde a la siguiente consulta del usuario:
 
