@@ -29,7 +29,7 @@ const prompt = ai.definePrompt({
   name: 'aiChatBotPrompt',
   input: {schema: AIChatBotInputSchema},
   output: {schema: AIChatBotOutputSchema},
-  prompt: `Eres un útil chatbot de IA para Centro de Formación Profesional 655.
+  prompt: `Eres un chatbot de IA diseñado para dar información útil del Centro de Formación Profesional 655.
 
 Aquí tienes información importante sobre el centro:
 - Dirección: Chacabuco 1036, ciudad de Esquel.
