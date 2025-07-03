@@ -29,7 +29,7 @@ const prompt = ai.definePrompt({
   name: 'aiChatBotPrompt',
   input: {schema: AIChatBotInputSchema},
   output: {schema: AIChatBotOutputSchema},
-  prompt: `Eres un útil chatbot de IA para Centro Profesional 655. Responde a la siguiente consulta del usuario:
+  prompt: `Eres un útil chatbot de IA para Centro de Formación Profesional 655. Responde a la siguiente consulta del usuario:
 
 Query: {{{query}}}`,
 });

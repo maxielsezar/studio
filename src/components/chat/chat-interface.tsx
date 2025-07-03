@@ -16,7 +16,7 @@ type Message = {
 
 export function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "¡Hola! Soy el asistente de Centro Profesional 655. ¿Cómo puedo ayudarte hoy?" }
+    { role: 'assistant', content: "¡Hola! Soy el asistente de Centro de Formación Profesional 655. ¿Cómo puedo ayudarte hoy?" }
   ])
   const [inputValue, setInputValue] = useState('')
   const [isLoading, setIsLoading] = useState(false)

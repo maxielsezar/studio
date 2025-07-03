@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster"
 
 export const metadata: Metadata = {
-  title: 'Centro Profesional 655',
-  description: 'Aplicación para Centro Profesional 655.',
+  title: 'Centro de Formación Profesional 655',
+  description: 'Aplicación para Centro de Formación Profesional 655.',
 };
 
 export default function RootLayout({
