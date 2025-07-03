@@ -6,8 +6,7 @@ import { ChatMessages } from '@/components/chat/chat-messages'
 import { ChatInput } from '@/components/chat/chat-input'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Skeleton } from '../ui/skeleton'
-import { Avatar, AvatarFallback } from '../ui/avatar'
-import { Bot } from 'lucide-react'
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'
 
 type Message = {
   role: 'user' | 'assistant'
@@ -56,8 +55,9 @@ export function ChatInterface() {
             <ChatMessages messages={messages} />
             {isLoading && (
               <div className="flex items-start gap-4 pt-6">
-                <Avatar className="h-10 w-10 border bg-primary text-primary-foreground">
-                  <AvatarFallback><Bot /></AvatarFallback>
+                <Avatar className="h-10 w-10 border">
+                  <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW1LevXfvlvDPTMa8Ua5RuaLsTwuSgLiXDeCu1sMvhwaQY5Okfu4mJQjtojFWAJTrCzg&usqp=CAU" alt="Logo del bot" />
+                  <AvatarFallback>CFP</AvatarFallback>
                 </Avatar>
                 <div className="flex flex-col gap-2 pt-2">
                   <Skeleton className="h-4 w-20 rounded-md" />

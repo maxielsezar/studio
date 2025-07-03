@@ -1,6 +1,6 @@
-import { Avatar, AvatarFallback } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { cn } from '@/lib/utils'
-import { Bot, User } from 'lucide-react'
+import { User } from 'lucide-react'
 
 type Message = {
   role: 'user' | 'assistant'
@@ -23,10 +23,9 @@ export function ChatMessages({ messages }: ChatMessagesProps) {
           )}
         >
           {message.role === 'assistant' && (
-            <Avatar className='h-10 w-10 border bg-primary text-primary-foreground'>
-              <AvatarFallback>
-                <Bot />
-              </AvatarFallback>
+            <Avatar className='h-10 w-10 border'>
+              <AvatarImage src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhW1LevXfvlvDPTMa8Ua5RuaLsTwuSgLiXDeCu1sMvhwaQY5Okfu4mJQjtojFWAJTrCzg&usqp=CAU" alt="Logo del bot" />
+              <AvatarFallback>CFP</AvatarFallback>
             </Avatar>
           )}
           <div
