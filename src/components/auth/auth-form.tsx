@@ -1,6 +1,7 @@
 'use client'
 
-import { useFormState, useFormStatus } from 'react-dom'
+import { useActionState } from 'react'
+import { useFormStatus } from 'react-dom'
 import { login, signup } from '@/app/auth/actions'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -20,8 +21,8 @@ function SubmitButton({ text }: { text: string }) {
 }
 
 export function AuthForm() {
-  const [loginState, loginAction] = useFormState(login, undefined)
-  const [signupState, signupAction] = useFormState(signup, undefined)
+  const [loginState, loginAction] = useActionState(login, undefined)
+  const [signupState, signupAction] = useActionState(signup, undefined)
 
   return (
     <Card>
