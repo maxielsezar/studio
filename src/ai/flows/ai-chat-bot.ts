@@ -1,4 +1,4 @@
-'use server';
+'use client';
 
 /**
  * @fileOverview Un flujo de chatbot de IA que responde a las consultas de los usuarios.
